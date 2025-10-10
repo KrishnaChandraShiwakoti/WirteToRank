@@ -12,3 +12,19 @@
   --color-primary-800: #3d378c;
   --color-primary-900: #2e2a6b;
 }
+
+/* ✅ Define animations the classic Tailwind way */
+@layer utilities {
+  @keyframes border-rotate {
+    0% {
+      transform: rotate(-360deg);
+    }
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+
+  .animate-spin-slow {
+    animation: border-rotate 5s linear infinite;
+  }
+}

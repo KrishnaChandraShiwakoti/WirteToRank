@@ -1,9 +1,16 @@
 import "./App.css";
+import Button from "./ui/Buttons/Button";
+import CTA from "./ui/Buttons/CTA";
+import HeroButton from "./ui/Buttons/HeroButton";
+import WatchVideo from "./ui/Buttons/WatchVideo";
 
 function App() {
   return (
     <>
-      <p className="bg-primary-100 text-primary-50">example</p>
+      <Button title={"Get Started Now"} />
+      <CTA title={"Get Started Now"} />
+      <HeroButton title={"Try SEO Heist"} />
+      <WatchVideo title={"Watch Video"} />
     </>
   );
 }
