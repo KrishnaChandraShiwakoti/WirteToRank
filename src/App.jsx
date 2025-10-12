@@ -3,7 +3,10 @@ import Button from "./ui/Buttons/Button";
 import CTA from "./ui/Buttons/CTA";
 import HeroButton from "./ui/Buttons/HeroButton";
 import WatchVideo from "./ui/Buttons/WatchVideo";
+import Learn from "./ui/Learn";
 import Navbar from "./ui/Navbar";
+import ReviewCard from "./ui/ReviewCard";
+import SoftwareLogo from "./ui/SoftwareLogo";
 import ViewFaqs from "./ui/ViewFaqs";
 
 function App() {
@@ -20,6 +23,14 @@ function App() {
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam enim beatae ducimus fuga, impedit ratione eaque numquam quasi? Deleniti maiores vitae neque, dignissimos facere similique ipsam vero sed voluptate mollitia?"
         }
       />
+      <ReviewCard
+        name={"Crystal Maiden"}
+        post={"Growth Manager"}
+        rating={3.5}
+        review={"Excellent service! Highly recommended."}
+      />
+      <SoftwareLogo name={"Grammarly"} />
+      <Learn />
     </>
   );
 }
