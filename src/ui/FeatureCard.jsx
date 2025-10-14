@@ -6,7 +6,7 @@ import { featuredCards } from "../Utlis/Data/featuredCard.js";
 const FeatureCard = ({ Selected }) => {
   const selectedCard = featuredCards[Selected];
   return (
-    <div className="bg-white text-black p-4 rounded-xl w-7/12">
+    <div className="bg-white text-black p-4 py-8 rounded-xl w-7/12">
       <h1 className="font-bold text-2xl">{selectedCard?.title}</h1>
       <p>{selectedCard?.description}</p>
       <div className="flex justify-between mx-5 gap-8">
@@ -26,7 +26,7 @@ const FeatureCard = ({ Selected }) => {
           );
         })}
       </div>
-      <div class="flex mt-4 justify-center items-center">
+      <div class="flex mt-4 justify-Start items-center">
         <CTA title={"Get Started Now"} />
         <WatchVideo title={"Watch Video"} />
       </div>

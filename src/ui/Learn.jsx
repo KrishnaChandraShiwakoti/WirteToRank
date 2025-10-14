@@ -4,9 +4,9 @@ import FeatureCard from "./FeatureCard";
 
 const Learn = () => {
   return (
-    <div className="bg-primary-900 md:w-10/12 lg:w-[100%] mx-auto">
+    <div className="bg-primary-900 md:w-10/12 lg:w-[100%] mx-auto ">
       <div
-        className="rounded-tl-2xl p-4 w-auto bg-cover bg-center text-white flex flex-col items-center"
+        className="rounded-tl-2xl p-4 py-5 w-auto bg-cover bg-center text-white flex flex-col items-center"
         style={{ backgroundImage: `url(${LearnBg})` }}>
         <div className="w-auto flex justify-center items-center flex-col">
           <h1 className="text-center text-3xl font-bold  text-white">

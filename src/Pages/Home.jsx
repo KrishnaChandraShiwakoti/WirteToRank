@@ -8,6 +8,11 @@ import Learn from "../ui/Learn";
 import Footer from "../Components/Footer";
 import FrequentlyQuestions from "../Components/FrequentlyQuestions";
 import Progress from "../Components/Progress";
+import Integration from "../Components/Integration";
+import Testimonial from "../Components/Testimonial";
+import CTA from "../ui/Buttons/CTA";
+import LocalSEO from "../assets/svg/LocalSEO.svg";
+import image from "../assets/img/LocalSeo.png";
 
 const Home = () => {
   return (
@@ -18,7 +23,7 @@ const Home = () => {
           style={{
             background: `url(${HomeScreen})`,
             backgroundRepeat: "no-repeat",
-            WebkitBackgroundSize: "cover",
+            backgroundSize: "cover",
           }}>
           <Navbar />
           <div className="text-white text-center flex flex-col gap-10 items-center">
@@ -50,7 +55,56 @@ const Home = () => {
       <FeatureSection />
       <Progress />
       <Learn />
+      <Integration />
+      <Testimonial />
       <FrequentlyQuestions />
+      <div
+        className="rounded-b-3xl flex flex-col justify-center items-center gap-5 py-20"
+        style={{
+          background: `url(${image})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "100% 100%",
+        }}>
+        <h1 className="text-5xl bg-gradient-to-r from-pink-500 via-amber-300 to-primary-600 bg-clip-text text-transparent font-bold">
+          Ready to 10x Your Local SEO
+        </h1>
+        <p className="text-white text-xl w-4/12">
+          Join thousands of businesses dominating their local markets with
+          WritetoRank's intelligent SEO automation. Start generating city pages
+          today.
+        </p>
+        <div className="flex gap-5">
+          <div className="text-white flex flex-col gap-4">
+            <p className="text-3xl">50,340+</p>
+            <p>City Page Generated</p>
+            <p className="bg-primary-600 bg-clip-text text-transparent">
+              +250% this month
+            </p>
+          </div>
+          <div className="text-white flex flex-col gap-4">
+            <p className="text-3xl">50,340+</p>
+            <p>City Page Generated</p>
+            <p className="bg-primary-600 bg-clip-text text-transparent">
+              +250% this month
+            </p>
+          </div>
+          <div className="text-white flex flex-col gap-4">
+            <p className="text-3xl">50,340+</p>
+            <p>City Page Generated</p>
+            <p className="bg-primary-600 bg-clip-text text-transparent">
+              +250% this month
+            </p>
+          </div>
+          <div className="text-white flex flex-col gap-4">
+            <p className="text-3xl">50,340+</p>
+            <p>City Page Generated</p>
+            <p className="bg-primary-600 bg-clip-text text-transparent">
+              +250% this month
+            </p>
+          </div>
+        </div>
+        <CTA title={"Get Started Now"} />
+      </div>
       <Footer />
     </>
   );
