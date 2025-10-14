@@ -1,0 +1,91 @@
+import CTA from "../ui/Buttons/CTA";
+import StepLine from "../assets/svg/StepLine.svg";
+import { MdNoteAdd } from "react-icons/md";
+import { GraphNewUp } from "@solar-icons/react";
+import { Rocket } from "@solar-icons/react";
+
+const Progress = () => {
+  return (
+    <div className="w-10/12 mx-auto mt-10 -mb-[300px]">
+      <div className="w-3/12 flex flex-col gap-4">
+        <p className="bg-primary-500 bg-clip-text text-transparent uppercase">
+          Simple Process
+        </p>
+        <h1 className="text-3xl font-bold">
+          Let's use{" "}
+          <span className="bg-gradient-to-r from-purple-600 to-primary-700 bg-clip-text text-transparent">
+            Writetorank{" "}
+          </span>
+          In{" "}
+          <span className="bg-primary-500 bg-clip-text text-transparent">
+            Three
+          </span>{" "}
+          Easy Actions
+        </h1>
+        <p className="text-neutral-500">
+          Get started in minutes with our streamlined workflow designed for
+          maximum efficiency.
+        </p>
+        <CTA title={"Get Started Now"} />
+      </div>
+      <div className="relative -top-50">
+        <img src={StepLine} alt="" />
+        <div className="flex">
+          <div className="w-3/12 relative left-40 -top-20 flex flex-col gap-3">
+            <MdNoteAdd
+              size={50}
+              color="#645be8"
+              className="p-2 bg-white rounded-xl"
+            />
+            <h1 className="absolute -z-1 left-55 text-9xl font-extrabold text-neutral-200 -top-10">
+              1
+            </h1>
+            <h1 className="text-2xl font-bold">Add You Business Details</h1>
+            <p className="text-neutral-500">
+              Input your business information, services, and target keywords.
+              Our AI understands your niche and creates relevant content
+            </p>
+          </div>
+          <div className="w-3/12 relative left-50 flex -top-55 flex-col gap-3">
+            <GraphNewUp
+              size={50}
+              weight="Outline"
+              color="#645be8"
+              className="p-2 bg-white rounded-xl"
+            />
+            <h1 className="absolute -z-1 left-50 text-9xl font-extrabold text-neutral-200 -top-12">
+              2
+            </h1>
+            <h1 className="text-2xl font-bold">
+              Analyze Competitors & Generate City Pages
+            </h1>
+            <p className="text-neutral-500">
+              Use SEO Heist to scan competitor URLs and extract their winning
+              strategies. Identify content gaps and opportunities. Select your
+              target locations and services. Generate thousands of unique,
+              SEO-optimized pages in minutes.
+            </p>
+          </div>
+          <div className="w-3/12 relative left-65 flex -top-117 flex-col gap-3">
+            <Rocket
+              size={50}
+              weight="Outline"
+              color="#645be8"
+              className="p-2 bg-white rounded-xl"
+            />
+            <h1 className="absolute -z-1 left-20 text-9xl font-extrabold text-neutral-200 -top-8">
+              3
+            </h1>
+            <h1 className="text-2xl font-bold">Deploy to WordPress</h1>
+            <p className="text-neutral-500">
+              Push all pages to your WordPress with one click. Watch your local
+              SEO rankings soar across all locations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Progress;

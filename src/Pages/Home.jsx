@@ -6,6 +6,8 @@ import ScrollLogo from "../Components/ScrollLogo";
 import FeatureSection from "../Components/FeatureSection";
 import Learn from "../ui/Learn";
 import Footer from "../Components/Footer";
+import FrequentlyQuestions from "../Components/FrequentlyQuestions";
+import Progress from "../Components/Progress";
 
 const Home = () => {
   return (
@@ -46,7 +48,9 @@ const Home = () => {
       <Table />
       <ScrollLogo />
       <FeatureSection />
+      <Progress />
       <Learn />
+      <FrequentlyQuestions />
       <Footer />
     </>
   );
