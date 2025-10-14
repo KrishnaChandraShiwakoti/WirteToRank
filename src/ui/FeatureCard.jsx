@@ -4,14 +4,13 @@ import CTA from "./Buttons/CTA";
 import { featuredCards } from "../Utlis/Data/featuredCard.js";
 
 const FeatureCard = ({ Selected }) => {
-  console.log(featuredCards);
   const selectedCard = featuredCards[Selected];
   return (
-    <div className="bg-white text-black p-4 rounded-xl">
-      <h1 className="font-bold text-2xl">{selectedCard.title}</h1>
-      <p>{selectedCard.description}</p>
+    <div className="bg-white text-black p-4 rounded-xl w-7/12">
+      <h1 className="font-bold text-2xl">{selectedCard?.title}</h1>
+      <p>{selectedCard?.description}</p>
       <div className="flex justify-between mx-5 gap-8">
-        {selectedCard.sections.map(({ heading, items }, idx) => {
+        {selectedCard?.sections.map(({ heading, items }, idx) => {
           console.log(heading);
           return (
             <div key={idx}>

@@ -1,16 +1,18 @@
-import React from "react";
 import HomeScreen from "../assets/svg/HomeScreen.svg";
 import Navbar from "../ui/Navbar";
 import HeroButton from "../ui/Buttons/HeroButton";
 import Table from "../Components/Table";
 import ScrollLogo from "../Components/ScrollLogo";
+import FeatureSection from "../Components/FeatureSection";
+import Learn from "../ui/Learn";
+import Footer from "../Components/Footer";
 
 const Home = () => {
   return (
     <>
-      <div className="bg-neutral-900 h-full w-full  rounded-bl-[20rem]">
+      <div className="bg-neutral-900 h-full w-full  lg:rounded-bl-[20rem] rounded-bl-[10rem]">
         <div
-          className="w-[100%] py-5 h-[100%] rounded-bl-[20rem]"
+          className="w-[100%] py-5 h-[100%] lg:rounded-bl-[20rem] rounded-bl-[10rem]"
           style={{
             background: `url(${HomeScreen})`,
             backgroundRepeat: "no-repeat",
@@ -32,7 +34,7 @@ const Home = () => {
               </span>{" "}
               Local SEO
             </div>
-            <p className="text-3xl text-center w-8/12">
+            <p className="lg:text-3xl text-xl text-center w-8/12">
               Generate thousands of optimized city-specific landing pages, heist
               competitor's SEO Strategies, and seamlessly integrate with
               WordPress - all in minutes, not months
@@ -43,6 +45,9 @@ const Home = () => {
       </div>
       <Table />
       <ScrollLogo />
+      <FeatureSection />
+      <Learn />
+      <Footer />
     </>
   );
 };

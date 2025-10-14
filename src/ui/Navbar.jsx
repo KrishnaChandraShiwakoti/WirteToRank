@@ -9,14 +9,14 @@ const Navbar = () => {
         <a href="#">
           <img src={Logo} alt="" className="h-5" />
         </a>
-        <div className=" gap-4 md:hidden lg:flex">
+        <div className=" gap-4 hidden lg:flex">
           <a href="#">Features</a>
           <a href="#">Analytics</a>
           <a href="#">Pricing</a>
           <a href="#">Integration</a>
         </div>
         <div className="mr-5 flex gap-4">
-          <button className="text-primary-500 hover:cursor-pointer">
+          <button className="text-primary-500 hover:cursor-pointer hidden lg:block">
             Login
           </button>
           <CTA title={"Get Started Now"} />

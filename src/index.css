@@ -27,9 +27,42 @@
   .animate-spin-slow {
     animation: border-rotate 5s linear infinite;
   }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .animate-scroll-left {
+    display: flex;
+    animation: scroll-left 10s linear infinite;
+    width: fit-content;
+    flex-shrink: 0;
+  }
+
+  .animate-scroll-right {
+    display: flex;
+    animation: scroll-right 10s linear infinite;
+    width: fit-content;
+    flex-shrink: 0;
+  }
 }
 body {
   margin: -10px;
   padding: 0px;
   height: 100vh;
+  background: #f1f0ff;
 }
