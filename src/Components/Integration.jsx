@@ -18,7 +18,7 @@ const Integration = () => {
         software, empowering you to streamline workflows and maximize
         productivity.
       </p>
-      <img src={IntegrationImg} className="w-6/12 h-8/12 mt-5" />
+      <img src={IntegrationImg} className="lg:w-6/12 lg:h-8/12 mt-5" />
     </div>
   );
 };

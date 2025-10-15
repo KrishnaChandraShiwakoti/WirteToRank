@@ -6,10 +6,10 @@ import { featuredCards } from "../Utlis/Data/featuredCard.js";
 const FeatureCard = ({ Selected }) => {
   const selectedCard = featuredCards[Selected];
   return (
-    <div className="bg-white text-black p-4 py-8 rounded-xl w-7/12">
+    <div className="bg-white text-black p-4 py-8 rounded-xl lg:w-7/12">
       <h1 className="font-bold text-2xl">{selectedCard?.title}</h1>
       <p>{selectedCard?.description}</p>
-      <div className="flex justify-between mx-5 gap-8">
+      <div className="flex flex-col lg:flex-row  justify-between mx-5 my-2 gap-8">
         {selectedCard?.sections.map(({ heading, items }, idx) => {
           console.log(heading);
           return (

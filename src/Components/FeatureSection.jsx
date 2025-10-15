@@ -9,30 +9,35 @@ import customBullets from "../assets/svg/customBullets.svg";
 
 const FeatureSection = () => {
   return (
-    <div className="w-full bg-white rounded-2xl">
+    <div className="relative w-full bg-white rounded-2xl">
+      <img
+        src={featureSection}
+        alt=""
+        className="absolute h-[100%] w-[100%] "
+      />
       <div
-        className="w-[100%] py-5 h-[100%] flex flex-col items-center rounded-tr-2xl"
+        className=" w-[100%] h-[100%] flex flex-col items-center rounded-tr-2xl py-5"
         style={{
           background: `url(${featureSection})`,
         }}>
         <p className="bg-primary-500 bg-clip-text text-transparent">
           Complete SEO kit
         </p>
-        <div className="mt-3 mx-auto text-center w-5/12 flex flex-col items-center justify-center">
+        <div className="mt-3 mx-auto text-center w-10/12 lg:w-5/12 flex flex-col items-center justify-center">
           <h1 className="text-3xl font-semibold">
             Everything You Need to{" "}
             <span className="bg-gradient-to-r from-pink-300 via-primary-400 to-pink-300 bg-clip-text text-transparent">
               Dominate SEO
             </span>
           </h1>
-          <p className="text-center text-neutral-500 w-8/12">
+          <p className="text-center text-neutral-500 lg:w-8/12">
             Our comprehensive platform combines cutting-edge AI technology with
             proven SEO strategies to deliver unmatched results for local
             businesses and agencies
           </p>
         </div>
         {/* City Page */}
-        <div className="flex gap-5 w-7/12 mt-5">
+        <div className="flex flex-col lg:flex-row gap-5 w-11/12 lg:w-7/12 mt-5">
           <img src={cityPage} alt="" className="h-90" />
           <div className="flex flex-col justify-center items-Start gap-3 ml-5">
             <h1 className="font-bold text-2xl">City Page Generator</h1>
@@ -62,7 +67,7 @@ const FeatureSection = () => {
           </div>
         </div>
         {/* SEO Heist */}
-        <div className="flex gap-5 w-7/12 mt-5">
+        <div className="flex flex-col-reverse lg:flex-row gap-5 w-11/12 lg:w-7/12 mt-5">
           <div className="flex flex-col justify-center items-Start gap-3 ml-5">
             <h1 className="font-bold text-2xl">SEO Heist</h1>
             <p>
@@ -91,7 +96,7 @@ const FeatureSection = () => {
           <img src={HeistedDetails} alt="" className="h-90" />
         </div>
         {/* Cluster */}
-        <div className="flex gap-5 w-7/12 mt-5">
+        <div className="flex gap-5 w-11/12 lg:w-7/12 mt-5 flex-col lg:flex-row">
           <img src={ClusterList} alt="" className="h-90" />
           <div className="flex flex-col justify-center items-Start gap-3 ml-5">
             <h1 className="font-bold text-2xl">Cluster Setup</h1>
@@ -121,7 +126,7 @@ const FeatureSection = () => {
           </div>
         </div>
         {/* WordPress Integration */}
-        <div className="flex gap-5 w-7/12 mt-5">
+        <div className="flex gap-5 w-11/12 lg:w-7/12 mt-5 flex-col-reverse lg:flex-row">
           <div className="flex flex-col justify-center items-Start gap-3 ml-5">
             <h1 className="font-bold text-2xl">WordPress Integration</h1>
             <p>

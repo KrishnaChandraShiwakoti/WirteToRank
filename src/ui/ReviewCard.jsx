@@ -32,9 +32,9 @@ const StarRating = ({ rating, maxStars = 5 }) => {
   return <div className="flex items-center gap-1">{stars}</div>;
 };
 
-const ReviewCard = ({ profile, name, rating, post, review }) => {
+const ReviewCard = ({ profile }) => {
   return (
-    <div className="w-xl bg-white shadow-xl rounded-xl p-4">
+    <div className="w-sm lg:w-lg bg-white shadow-xl rounded-xl p-4 text-black">
       <div className="flex p-2 justify-between items-center mx-5">
         <div className="flex items-center gap-4">
           {/* Profile pic */}
@@ -47,19 +47,28 @@ const ReviewCard = ({ profile, name, rating, post, review }) => {
           </div>
           {/* Info */}
           <div>
-            <h1 className="font-bold text-lg">{name}</h1>
-            <p className="text-neutral-500">{post}</p>
+            <h1 className="font-bold text-lg">Crystal Maiden</h1>
+            <p className="text-neutral-500">Growth Manager</p>
           </div>
         </div>
         {/* Ratings */}
-        <div className="flex items-center gap-2">
-          <StarRating rating={rating} />
-          <span className="text-sm text-gray-600">({rating})</span>
+        <div className="lg:flex hidden items-center gap-2">
+          <StarRating rating={5} />
+          <span className="text-sm text-gray-600">({5})</span>
         </div>
       </div>
       <hr />
       {/* Review */}
-      <h2 className="mt-5">{review}</h2>
+      <h2 className="mt-5">
+        "Moving from Ireland to Australia seemed daunting, but Talent Way guided
+        me through every step. I landed my dream job with visa sponsorship
+        within 6 weeks."
+      </h2>
+      Ratings
+      <div className="flex lg:hidden items-center gap-2">
+        <StarRating rating={5} />
+        <span className="text-sm text-gray-600">({5})</span>
+      </div>
     </div>
   );
 };

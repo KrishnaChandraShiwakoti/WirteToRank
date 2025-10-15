@@ -58,22 +58,23 @@ const Home = () => {
       <Integration />
       <Testimonial />
       <FrequentlyQuestions />
-      <div
-        className="rounded-b-3xl flex flex-col justify-center items-center gap-5 py-20"
-        style={{
-          background: `url(${image})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "100% 100%",
-        }}>
-        <h1 className="text-5xl bg-gradient-to-r from-pink-500 via-amber-300 to-primary-600 bg-clip-text text-transparent font-bold">
+      <div className="relative rounded-b-3xl flex flex-col justify-center items-center gap-5 py-40 my-20">
+        <img src={LocalSEO} alt="" className="absolute lg:hidden block -z-1" />
+        <img
+          src={image}
+          alt=""
+          className="absolute hidden lg:block -z-1 h-[100%] w-[100%]"
+        />
+
+        <h1 className="lg:text-5xl text-2xl bg-gradient-to-r from-pink-500 via-amber-300 to-primary-600 bg-clip-text text-transparent font-bold">
           Ready to 10x Your Local SEO
         </h1>
-        <p className="text-white text-xl w-4/12">
+        <p className="text-white text-xl mx-10 text-center lg:w-5/12">
           Join thousands of businesses dominating their local markets with
           WritetoRank's intelligent SEO automation. Start generating city pages
           today.
         </p>
-        <div className="flex gap-5">
+        <div className="flex gap-5 flex-col lg:flex-row">
           <div className="text-white flex flex-col gap-4">
             <p className="text-3xl">50,340+</p>
             <p>City Page Generated</p>

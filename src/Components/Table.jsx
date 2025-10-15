@@ -3,11 +3,11 @@ import { IoPerson } from "react-icons/io5";
 import { IoIosSettings } from "react-icons/io";
 const Table = ({ profile }) => {
   return (
-    <div className=" bg-primary-50 lg:-top-80 -top-50 relative w-8/12 mx-auto rounded-3xl p-4 lg:mb-[-320px]">
+    <div className=" bg-primary-50 lg:-top-80 -top-40 relative w-11/12 lg:w-8/12 mx-auto rounded-3xl p-4 mb-[-200px] lg:mb-[-320px]">
       <div className="w-full bg-white shadow-sm rounded-3xl pb-20">
         {/* Header Bar */}
         <div className=" bg-white rounded-t-3xl shadow-lg p-2">
-          <div className=" ml-5 flex justify-between items-center">
+          <div className="flex justify-between items-center">
             <a href="#">
               <img src={Logo} alt="" className="h-5" />
             </a>
@@ -28,7 +28,7 @@ const Table = ({ profile }) => {
               ) : (
                 <IoPerson className="h-8 w-8" />
               )}
-              <p>Welcome,User</p>
+              <p className="hidden lg:block">Welcome,User</p>
               <IoIosSettings className="h-8 w-8" />
               <button
                 className="px-4 py-2 rounded-[10px] text-white bg-gradient-to-r 

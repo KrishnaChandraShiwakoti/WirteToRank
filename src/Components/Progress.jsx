@@ -6,8 +6,8 @@ import { Rocket } from "@solar-icons/react";
 
 const Progress = () => {
   return (
-    <div className="w-8/12 mx-auto mt-10 -mb-[300px]">
-      <div className="w-3/12 flex flex-col gap-4">
+    <div className="w-8/12 mx-auto mt-10 lg:-mb-[300px]">
+      <div className="lg:w-3/12 flex flex-col gap-4 mb-10">
         <p className="bg-primary-500 bg-clip-text text-transparent uppercase">
           Simple Process
         </p>
@@ -28,10 +28,10 @@ const Progress = () => {
         </p>
         <CTA title={"Get Started Now"} />
       </div>
-      <div className="relative -top-50">
-        <img src={StepLine} alt="" />
-        <div className="flex">
-          <div className="w-3/12 relative left-40 -top-20 flex flex-col gap-3">
+      <div className="relative lg:-top-50 mb-10">
+        <img src={StepLine} alt="" className="hidden lg:block" />
+        <div className="flex flex-col lg:flex-row gap-6">
+          <div className="lg:w-3/12 relative lg:left-40 lg:-top-20 flex flex-col gap-3">
             <MdNoteAdd
               size={50}
               color="#645be8"
@@ -46,7 +46,7 @@ const Progress = () => {
               Our AI understands your niche and creates relevant content
             </p>
           </div>
-          <div className="w-3/12 relative left-50 flex -top-55 flex-col gap-3">
+          <div className="md:w-3/12 relative lg:left-60 flex lg:-top-55 flex-col gap-3">
             <GraphNewUp
               size={50}
               weight="Outline"
@@ -66,14 +66,14 @@ const Progress = () => {
               SEO-optimized pages in minutes.
             </p>
           </div>
-          <div className="w-3/12 relative left-55 flex -top-117 flex-col gap-3">
+          <div className="lg:w-3/12 relative lg:left-85 flex lg:-top-117 flex-col gap-3">
             <Rocket
               size={50}
               weight="Outline"
               color="#645be8"
               className="p-2 bg-white rounded-xl"
             />
-            <h1 className="absolute -z-1 left-20 text-9xl font-extrabold text-neutral-200 -top-8">
+            <h1 className="absolute -z-1 left-50 lg:left-20 text-9xl font-extrabold text-neutral-200 -top-8">
               3
             </h1>
             <h1 className="text-2xl font-bold">Deploy to WordPress</h1>

@@ -2,7 +2,7 @@ import React from "react";
 import ViewFaqs from "../ui/ViewFaqs";
 const FrequentlyQuestions = () => {
   return (
-    <div className="w-7/12 mx-auto my-3 flex flex-col items-center text-center">
+    <div className=" w-11/13 lg:w-7/12 mx-auto my-3 flex flex-col items-center text-center">
       <h1 className="text-3xl font-bold ">
         Frequently Asked{" "}
         <span className="bg-gradient-to-r from-primary-400 to-primary-700 bg-clip-text text-transparent">
@@ -16,7 +16,7 @@ const FrequentlyQuestions = () => {
         productivity
       </p>
 
-      <div className="w-11/12 flex flex-col gap-2 mt-2">
+      <div className="w-11/12 flex flex-col gap-2 mt-2 items-center">
         <ViewFaqs
           title={"What exactly are city page and why do i need them?"}
           description={
