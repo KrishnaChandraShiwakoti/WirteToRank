@@ -1,12 +1,12 @@
 import React from "react";
 import WatchVideo from "./Buttons/WatchVideo";
-import CTA from "./Buttons/CTA";
+import Button from "./Buttons/Button";
 import { featuredCards } from "../Utlis/Data/featuredCard.js";
 
 const FeatureCard = ({ Selected }) => {
   const selectedCard = featuredCards[Selected];
   return (
-    <div className="bg-white text-black p-4 py-8 rounded-xl lg:w-7/12">
+    <div className="bg-white w-11/12 text-black px-8 py-8 rounded-xl lg:w-7/12">
       <h1 className="font-bold text-2xl">{selectedCard?.title}</h1>
       <p>{selectedCard?.description}</p>
       <div className="flex flex-col lg:flex-row  justify-between mx-5 my-2 gap-8">
@@ -26,8 +26,8 @@ const FeatureCard = ({ Selected }) => {
           );
         })}
       </div>
-      <div class="flex mt-4 justify-Start items-center">
-        <CTA title={"Get Started Now"} />
+      <div class="flex mt-4 justify-Start items-center w-10/12">
+        <Button title={"Get Started Now"} />
         <WatchVideo title={"Watch Video"} />
       </div>
     </div>

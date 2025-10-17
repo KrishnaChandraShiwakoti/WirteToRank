@@ -5,7 +5,7 @@ import { FaMinus } from "react-icons/fa";
 const ViewFaqs = ({ title, description }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="mx-2 px-2 py-3 rounded-xl w-10/12 bg-neutral-100 flex flex-col gap-3">
+    <div className="mx-2 px-2 py-3 rounded-xl w-12/12 bg-neutral-100 flex flex-col gap-3 text-xl">
       <div className="flex justify-between items-center">
         {title}{" "}
         <button
@@ -18,7 +18,9 @@ const ViewFaqs = ({ title, description }) => {
           {!isOpen ? <FaPlus /> : <FaMinus />}
         </button>
       </div>
-      {isOpen && <div>{description}</div>}
+      {isOpen && (
+        <div className="text-md text-neutral-500 text-start">{description}</div>
+      )}
     </div>
   );
 };

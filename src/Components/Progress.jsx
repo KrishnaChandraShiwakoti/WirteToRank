@@ -1,4 +1,4 @@
-import CTA from "../ui/Buttons/CTA";
+import Button from "../ui/Buttons/Button";
 import StepLine from "../assets/svg/StepLine.svg";
 import { MdNoteAdd } from "react-icons/md";
 import { GraphNewUp } from "@solar-icons/react";
@@ -26,7 +26,7 @@ const Progress = () => {
           Get started in minutes with our streamlined workflow designed for
           maximum efficiency.
         </p>
-        <CTA title={"Get Started Now"} />
+        <Button title={"Get Started Now"} />
       </div>
       <div className="relative lg:-top-50 mb-10">
         <img src={StepLine} alt="" className="hidden lg:block" />

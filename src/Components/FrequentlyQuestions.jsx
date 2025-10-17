@@ -9,14 +9,14 @@ const FrequentlyQuestions = () => {
           Questions
         </span>
       </h1>
-      <p className="text-neutral-500">
+      <p className="text-neutral-500 mt-5">
         Connect, collaborate and automate with TechVantage's extensive library
         of integrations. Our platform seamlessly integrates with popular
         software, empowering you to streamline workflow and maximize
         productivity
       </p>
 
-      <div className="w-11/12 flex flex-col gap-2 mt-2 items-center">
+      <div className="w-11/12 flex flex-col gap-2 items-center mt-10">
         <ViewFaqs
           title={"What exactly are city page and why do i need them?"}
           description={

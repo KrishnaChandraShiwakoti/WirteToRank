@@ -5,7 +5,7 @@ import drafitbit from "../assets/draftbit.png";
 
 const ScrollLogo = () => {
   return (
-    <div className="flex justify-center items-center mt-20 flex-col">
+    <div className=" relative w-full flex justify-center items-center top-20 my-20 flex-col overflow-hidden">
       <h1 className="text-2xl mb-5">
         Over{" "}
         <span className="bg-primary-600 bg-clip-text text-transparent">
