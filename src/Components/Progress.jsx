@@ -7,7 +7,7 @@ import { Rocket } from "@solar-icons/react";
 const Progress = () => {
   return (
     <div className="w-8/12 mx-auto mt-10 lg:-mb-[300px]">
-      <div className="lg:w-3/12 flex flex-col gap-4 mb-10">
+      <div className="lg:w-5/12 flex flex-col gap-4 mb-10">
         <p className="bg-primary-500 bg-clip-text text-transparent uppercase">
           Simple Process
         </p>

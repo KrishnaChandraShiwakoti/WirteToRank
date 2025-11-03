@@ -1,13 +1,15 @@
+import { useState } from "react";
 import LearnBg from "../assets/svg/Learn.svg";
 import FeatureCard from "./FeatureCard";
 import { Element } from "react-scroll";
 
 const Learn = () => {
+  const [selected, setSelected] = useState(0);
   return (
     <Element name="Learn">
       <div className="bg-[#101123] md:w-10/12 lg:w-[100%] mx-auto " id="Learn">
         <div
-          className="rounded-tl-2xl p-4 py-5 w-auto bg-cover bg-center text-white flex flex-col items-center"
+          className="rounded-tl-2xl p-4 py-10 w-auto bg-cover bg-center text-white flex flex-col items-center"
           style={{ backgroundImage: `url(${LearnBg})` }}>
           <div className="w-auto flex justify-center items-center flex-col">
             <h1 className="text-center text-3xl font-bold  text-white">
@@ -25,21 +27,29 @@ const Learn = () => {
           {/* Categories bar */}
           <div className="bg-gradient-to-r from-pink-500 via-primary-400 to bg-pink-500 p-px rounded-3xl  mx-auto my-3">
             <div className="bg-white text-primary-600 rounded-3xl flex justify-center items-center gap-5 px-3 py-2">
-              <a className="bg-primary-500 cursor-pointer text-white rounded-2xl px-2 py-1 ">
+              <a
+                onClick={setSelected(0)}
+                className="bg-primary-500 cursor-pointer text-white rounded-2xl px-2 py-1 ">
                 City Page
               </a>
-              <a className="bg-neutral-200 cursor-pointer rounded-2xl px-2 py-1 ">
+              <a
+                onClick={setSelected(1)}
+                className="bg-neutral-200 cursor-pointer rounded-2xl px-2 py-1 ">
                 SEO Heist
               </a>
-              <a className="bg-neutral-200 cursor-pointer rounded-2xl px-2 py-1 ">
+              <a
+                onClick={setSelected(2)}
+                className="bg-neutral-200 cursor-pointer rounded-2xl px-2 py-1 ">
                 Cluster
               </a>
-              <a className="bg-neutral-200 cursor-pointer rounded-2xl px-2 py-1 ">
+              <a
+                onClick={setSelected(3)}
+                className="bg-neutral-200 cursor-pointer rounded-2xl px-2 py-1 ">
                 WordPress
               </a>
             </div>
           </div>
-          <FeatureCard Selected={0} />
+          <FeatureCard Selected={selected} />
         </div>
       </div>
     </Element>
