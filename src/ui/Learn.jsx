@@ -24,6 +24,7 @@ const Learn = () => {
               analysis.
             </p>
           </div>
+
           {/* Categories bar */}
           <div className="bg-gradient-to-r from-pink-500 via-primary-400 to bg-pink-500 p-px rounded-3xl  mx-auto my-3">
             <div className="bg-white text-primary-600 rounded-3xl flex justify-center items-center gap-5 px-3 py-2">
