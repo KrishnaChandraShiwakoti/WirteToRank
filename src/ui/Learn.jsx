@@ -5,6 +5,8 @@ import FeatureCard from "./FeatureCard";
 
 const Learn = () => {
   const [selected, setSelected] = useState(0);
+  const categories = ["City Page", "SEO Heist", "Cluster", "WordPress"];
+
   return (
     <Element name="Learn">
       <div className="bg-[#101123] md:w-10/12 lg:w-[100%] mx-auto " id="Learn">
@@ -18,41 +20,32 @@ const Learn = () => {
                 Powerful Features
               </span>
             </h1>
-            <p className="text-center w-2/3">
+            <p className="text-center w-full max-w-xl md:max-w-2xl px-4">
               Master the art of local SEO with our comprehensive guides on
               WordPress integration,city Page Creation, and competitive content
               analysis.
             </p>
           </div>
-
           {/* Categories bar */}
-          <div className="bg-gradient-to-r from-pink-500 via-primary-400 to bg-pink-500 p-px rounded-3xl  mx-auto my-3">
-            <div className="bg-white text-primary-600 rounded-3xl flex justify-center items-center gap-5 px-3 py-2">
-              <a
-                onClick={() => setSelected(0)}
-                className={
-                  "bg-primary-500 cursor-pointer text-white rounded-2xl px-2 py-1 "
-                }>
-                City Page
-              </a>
-              <a
-                onClick={() => setSelected(1)}
-                className="bg-neutral-200 cursor-pointer rounded-2xl px-2 py-1 ">
-                SEO Heist
-              </a>
-              <a
-                onClick={() => setSelected(2)}
-                className="bg-neutral-200 cursor-pointer rounded-2xl px-2 py-1 ">
-                Cluster
-              </a>
-              <a
-                onClick={() => setSelected(3)}
-                className="bg-neutral-200 cursor-pointer rounded-2xl px-2 py-1 ">
-                WordPress
-              </a>
+          <div className="bg-gradient-to-r from-pink-500 via-primary-400 to bg-pink-500 p-px rounded-3xl mx-auto my-3 max-w-3xl">
+            <div className="bg-white text-primary-600 rounded-3xl flex items-center gap-1 px-2 lg:gap-3 lg:px-3 py-2 overflow-x-auto no-scrollbar">
+              {categories.map((cat, idx) => (
+                <button
+                  key={cat}
+                  onClick={() => setSelected(idx)}
+                  aria-pressed={selected === idx}
+                  className={`flex-shrink-0 cursor-pointer rounded-2xl px-2 lg:px-4 py-2 text-sm font-medium transition ${
+                    selected === idx
+                      ? "bg-primary-500 text-white"
+                      : "bg-neutral-200 text-gray-700"
+                  }`}>
+                  {cat}
+                </button>
+              ))}
             </div>
           </div>
-          <FeatureCard Selected={selected} />
+
+          <FeatureCard selected={selected} />
         </div>
       </div>
     </Element>
