@@ -16,7 +16,7 @@ import HeroSection from "../Components/HeroSection";
 import ErrorBoundary from "../Components/ErrorBoundary";
 import Walkthrough from "../Components/Walkthrough";
 import Form from "../Components/Form";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Home = () => {
   const [showForm, setShowForm] = useState(false);
@@ -24,6 +24,18 @@ const Home = () => {
     e.stopPropagation();
     setShowForm(true);
   };
+
+  // close the form when Escape is pressed
+  useEffect(() => {
+    if (!showForm) return;
+    const onKey = (e) => {
+      if (e.key === "Escape" || e.key === "Esc") {
+        setShowForm(false);
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [showForm]);
   return (
     <div div className="relative">
       <div className=" bg-neutral-900  h-full w-full lg:rounded-bl-[20rem] rounded-bl-[10rem] ">
