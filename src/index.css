@@ -1,6 +1,12 @@
+@font-face {
+  font-family: DMSans;
+  src: url("./assets/fonts/DMSans_24pt-Regular.ttf");
+}
+
 @import "tailwindcss";
 
 @theme {
+  --font-dmSans: DMSana;
   --color-primary-50: #f1f0ff;
   --color-primary-100: #d2cfff;
   --color-primary-200: #bcb8ff;
@@ -65,4 +71,7 @@ body {
   padding: 0px;
   height: 100vh;
   background: #f1f0ff;
+}
+html {
+  @apply font-dmSans;
 }

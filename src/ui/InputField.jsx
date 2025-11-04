@@ -1,16 +1,19 @@
 import React from "react";
 
-const InputField = ({ label, type, placeholder }) => {
+const InputField = ({ label, type = "text", placeholder = "", name }) => {
   return (
-    <div className="flex flex-col gap-2 items-start">
-      <label htmlFor="" className="font-bold text-xxl">
-        {label} <span>*</span>
+    <div className="flex flex-col gap-2 items-start w-full">
+      <label
+        htmlFor={name || label}
+        className="font-semibold text-sm text-gray-800">
+        {label} <span className="text-primary-600">*</span>
       </label>
       <input
+        id={name || label}
+        name={name}
         type={type}
-        value=""
         placeholder={placeholder}
-        className="border-1 border-neutral-400 rounded-2xl px-3 py-1 w-[100%] focus:ring-2 ring-primary-500 ring-offset-4 ring-offset-pink-500 dark:ring-offset-slate"
+        className="w-full border border-gray-300 rounded-full px-6 py-3 placeholder-gray-400 text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 transition"
       />
     </div>
   );

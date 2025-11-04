@@ -50,19 +50,19 @@ const FeatureSection = () => {
               </p>
               <ul>
                 <li className="flex">
-                  <img src={customBullets} alt="" srcset="" />
+                  <img src={customBullets} alt="" />
                   Generate Pages for 10,000+ locations
                 </li>
                 <li className="flex">
-                  <img src={customBullets} alt="" srcset="" />
+                  <img src={customBullets} alt="" />
                   Service-specific content variations
                 </li>
                 <li className="flex">
-                  <img src={customBullets} alt="" srcset="" />
+                  <img src={customBullets} alt="" />
                   Custom Keyword integration
                 </li>
                 <li className="flex">
-                  <img src={customBullets} alt="" srcset="" />
+                  <img src={customBullets} alt="" />
                   Auto-optimized meta tags
                 </li>
               </ul>
@@ -79,19 +79,19 @@ const FeatureSection = () => {
               </p>
               <ul>
                 <li className="flex">
-                  <img src={customBullets} alt="" srcset="" />
+                  <img src={customBullets} alt="" />
                   Competitor URL analysis
                 </li>
                 <li className="flex">
-                  <img src={customBullets} alt="" srcset="" />
+                  <img src={customBullets} alt="" />
                   Content gap identification
                 </li>
                 <li className="flex">
-                  <img src={customBullets} alt="" srcset="" />
+                  <img src={customBullets} alt="" />
                   Keyword extraction
                 </li>
                 <li className="flex">
-                  <img src={customBullets} alt="" srcset="" />
+                  <img src={customBullets} alt="" />
                   Success pattern recognition
                 </li>
               </ul>
@@ -110,19 +110,19 @@ const FeatureSection = () => {
               </p>
               <ul>
                 <li className="flex">
-                  <img src={customBullets} alt="" srcset="" />
+                  <img src={customBullets} alt="" />
                   Smart URL clustering
                 </li>
                 <li className="flex">
-                  <img src={customBullets} alt="" srcset="" />
+                  <img src={customBullets} alt="" />
                   Heist status tracking
                 </li>
                 <li className="flex">
-                  <img src={customBullets} alt="" srcset="" />
+                  <img src={customBullets} alt="" />
                   Bulk operations support
                 </li>
                 <li className="flex">
-                  <img src={customBullets} alt="" srcset="" />
+                  <img src={customBullets} alt="" />
                   Performance monitoring
                 </li>
               </ul>
@@ -138,19 +138,19 @@ const FeatureSection = () => {
               </p>
               <ul>
                 <li className="flex">
-                  <img src={customBullets} alt="" srcset="" />
+                  <img src={customBullets} alt="" />
                   Direct WordPress API integration
                 </li>
                 <li className="flex">
-                  <img src={customBullets} alt="" srcset="" />
+                  <img src={customBullets} alt="" />
                   Bulk page publishing
                 </li>
                 <li className="flex">
-                  <img src={customBullets} alt="" srcset="" />
+                  <img src={customBullets} alt="" />
                   SEO plugin compatibility
                 </li>
                 <li className="flex">
-                  <img src={customBullets} alt="" srcset="" />
+                  <img src={customBullets} alt="" />
                   Automatic sitemap updates
                 </li>
               </ul>

@@ -11,7 +11,6 @@ const FeatureCard = ({ Selected }) => {
       <p>{selectedCard?.description}</p>
       <div className="flex flex-col lg:flex-row  justify-between mx-5 my-2 gap-8">
         {selectedCard?.sections.map(({ heading, items }, idx) => {
-          console.log(heading);
           return (
             <div key={idx}>
               <h1 className="bg-gradient-to-r from-pink-300 via-primary-400 to-pink-300 bg-clip-text text-transparent font-bold mb-3 text-xl">
@@ -26,7 +25,7 @@ const FeatureCard = ({ Selected }) => {
           );
         })}
       </div>
-      <div class="flex mt-4 justify-Start items-center w-10/12 lg:w-7/12">
+      <div className="flex mt-4 justify-Start items-center w-10/12 lg:w-7/12">
         <Button title={"Get Started Now"} />
         <WatchVideo title={"Watch Video"} />
       </div>

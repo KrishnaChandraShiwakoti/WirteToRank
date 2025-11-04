@@ -30,7 +30,9 @@ const Learn = () => {
             <div className="bg-white text-primary-600 rounded-3xl flex justify-center items-center gap-5 px-3 py-2">
               <a
                 onClick={() => setSelected(0)}
-                className="bg-primary-500 cursor-pointer text-white rounded-2xl px-2 py-1 ">
+                className={
+                  "bg-primary-500 cursor-pointer text-white rounded-2xl px-2 py-1 "
+                }>
                 City Page
               </a>
               <a

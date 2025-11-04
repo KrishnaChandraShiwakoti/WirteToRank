@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 
 const Navbar = ({ handleButtonClick }) => {
   return (
-    <div className=" mx-auto my-1 w-10/12 lg:w-8/12 rounded-full bg-primary-50 py-3">
+    <div className=" mx-auto my-1 w-10/12 lg:w-8/12 rounded-full auto bg-primary-50 py-3">
       <div className=" ml-5 flex justify-between items-center">
         <a href="#">
           <img src={Logo} alt="" className="h-5" />
