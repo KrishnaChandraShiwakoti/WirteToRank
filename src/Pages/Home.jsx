@@ -15,7 +15,6 @@ import image from "../assets/img/LocalSeo.png";
 import HeroSection from "../Components/HeroSection";
 import ErrorBoundary from "../Components/ErrorBoundary";
 import Walkthrough from "../Components/Walkthrough";
-import HeroImg from "../assets/img/HeroImg.png";
 import Form from "../Components/Form";
 import { useState } from "react";
 
@@ -26,10 +25,10 @@ const Home = () => {
     setShowForm(true);
   };
   return (
-    <>
-      <div className=" bg-neutral-900 h-11/12 lg:h-full w-full lg:rounded-bl-[20rem] rounded-bl-[10rem] ">
+    <div div className="relative">
+      <div className=" bg-neutral-900  h-full w-full lg:rounded-bl-[20rem] rounded-bl-[10rem] ">
         <div
-          className="w-[100%] py-5 h-[100%] lg:rounded-bl-[20rem] rounded-bl-[10rem]"
+          className="w-[100%] py-5 h-screen lg:rounded-bl-[20rem] rounded-bl-[10rem]"
           style={{
             background: `url(${HomeScreen})`,
             backgroundRepeat: "no-repeat",
@@ -37,12 +36,8 @@ const Home = () => {
           }}>
           <Navbar handleButtonClick={handleFormOverlay} />
           <HeroSection handleFormOverlay={handleFormOverlay} />
-          <img
-            src={HeroImg}
-            alt="Hero Img"
-            className="relative top-40 w-10/12 lg:w-8/12 mx-auto -mt-20"
-          />
         </div>
+
         {showForm && (
           <div
             className="fixed inset-0  bg-opacity-50 z-50 flex items-start justify-center pt-5"
@@ -53,6 +48,7 @@ const Home = () => {
           </div>
         )}
       </div>
+      <div className=" mt-20 lg:mt-100"></div>
       <ScrollLogo />
       <FeatureSection />
       <Progress />
@@ -114,7 +110,7 @@ const Home = () => {
         <Button title={"Get Started Now"} onClick={handleFormOverlay} />
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

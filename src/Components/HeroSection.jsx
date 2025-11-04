@@ -1,6 +1,8 @@
 import PrimaryHeader from "../ui/PrimaryHeader";
 import HeroButton from "../ui/Buttons/HeroButton";
 import star from "../assets/svg/star.svg";
+import HeroImg from "../assets/img/HeroImg.png";
+
 const HeroSection = ({ handleFormOverlay }) => {
   return (
     <div className="text-white text-center flex flex-col gap-5 items-center">
@@ -8,7 +10,7 @@ const HeroSection = ({ handleFormOverlay }) => {
         <img src={star} className="h-5 w-5" />
         <p className=" text-xl font-medium">AI-Powered SEO Revolution</p>
       </div>
-      <div className="text-4xl font-semibold mt-8 lg:mt-0 w-8/12 flex flex-col gap-5 lg:inline-block lg:w-6/12 lg:text-5xl ">
+      <div className="text-4xl font-semibold mt-8 lg:mt-0 w-8/12 flex flex-col gap-5 lg:inline-block lg:w-6/12 lg:text-5xl">
         <PrimaryHeader title={"Transform"} />
         Your Business{" "}
         <p>
@@ -24,7 +26,15 @@ const HeroSection = ({ handleFormOverlay }) => {
         competitor's SEO Strategies, and seamlessly integrate with WordPress -
         all in minutes, not months
       </p>
-      <HeroButton title={"Try SEO Heist"} onclick={handleFormOverlay} />
+      <div>
+        <HeroButton title={"Try SEO Heist"} onclick={handleFormOverlay} />
+        <img
+          src={HeroImg}
+          alt="Hero Img"
+          className=" w-11/12 h-[300px] lg:h-full lg:w-8/12 mx-auto mt-10
+        "
+        />
+      </div>
     </div>
   );
 };
