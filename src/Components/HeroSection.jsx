@@ -6,11 +6,11 @@ import HeroImg from "../assets/img/HeroImg.png";
 const HeroSection = ({ handleFormOverlay }) => {
   return (
     <div className="text-white text-center flex flex-col gap-5 items-center">
-      <div className="lg:flex mt-10 gap-3 items-center hidden ">
+      <div className="md:flex mt-10 gap-3 items-center hidden ">
         <img src={star} className="h-5 w-5" />
         <p className=" text-xl font-medium">AI-Powered SEO Revolution</p>
       </div>
-      <div className="text-4xl font-semibold mt-8 lg:mt-0 w-8/12 flex flex-col gap-5 lg:inline-block lg:w-6/12 lg:text-5xl">
+      <div className="text-4xl font-semibold mt-8 md:mt-0 w-8/12 flex flex-col gap-5 md:inline-block md:w-6/12 md:text-5xl">
         <PrimaryHeader title={"Transform"} />
         Your Business{" "}
         <p>
@@ -21,7 +21,7 @@ const HeroSection = ({ handleFormOverlay }) => {
         </p>
         Local SEO
       </div>
-      <p className="font-light text-center lg:text-2xl text-xl  lg:w-8/12 w-10/12">
+      <p className="font-light text-center md:text-2xl text-xl  md:w-8/12 w-10/12">
         Generate thousands of optimized city-specific landing pages, heist
         competitor's SEO Strategies, and seamlessly integrate with WordPress -
         all in minutes, not months
@@ -31,7 +31,7 @@ const HeroSection = ({ handleFormOverlay }) => {
         <img
           src={HeroImg}
           alt="Hero Img"
-          className=" w-11/12 h-[300px] lg:h-full lg:w-8/12 mx-auto mt-10
+          className=" w-11/12 h-[300px] md:h-full md:w-8/12 mx-auto mt-10
         "
         />
       </div>

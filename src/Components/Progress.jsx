@@ -26,7 +26,9 @@ const Progress = () => {
           Get started in minutes with our streamlined workflow designed for
           maximum efficiency.
         </p>
-        <Button title={"Get Started Now"} />
+        <div className="">
+          <Button title={"Get Started Now"} />
+        </div>
       </div>
       <div className="relative lg:-top-50 mb-10">
         <img src={StepLine} alt="" className="hidden lg:block" />

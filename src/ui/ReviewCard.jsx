@@ -1,5 +1,6 @@
 import React from "react";
 import { IoPerson } from "react-icons/io5";
+import avatar from "../assets/img/avatar.png";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 
 const StarRating = ({ rating, maxStars = 5 }) => {
@@ -42,13 +43,17 @@ const ReviewCard = ({ profile }) => {
             {profile ? (
               <img src={profile} alt="" />
             ) : (
-              <IoPerson className="h-8 w-8" />
+              <img src={avatar} className="rounded-2xl w-[100%] h-[100%]" />
             )}
           </div>
           {/* Info */}
           <div>
             <h1 className="font-bold text-lg">Crystal Maiden</h1>
-            <p className="text-neutral-500">Growth Manager</p>
+            <div className="flex gap-1 items-center">
+              <p className="text-neutral-500">Growth Manager</p>
+              <span className="border-l-2 border-neutral-500 h-3"></span>
+              <p className="text-primary-500">HomeServe Pro</p>
+            </div>
           </div>
         </div>
         {/* Ratings */}
@@ -57,14 +62,14 @@ const ReviewCard = ({ profile }) => {
           <span className="text-sm text-gray-600">({5})</span>
         </div>
       </div>
-      <hr />
+      <hr className="w-8/12 ml-5" />
+      <span className="border-b-2 border-neutral-500 h-3 w-11/12"></span>
       {/* Review */}
       <h2 className="mt-5">
         "Moving from Ireland to Australia seemed daunting, but Talent Way guided
         me through every step. I landed my dream job with visa sponsorship
         within 6 weeks."
       </h2>
-      Ratings
       <div className="flex lg:hidden items-center gap-2">
         <StarRating rating={5} />
         <span className="text-sm text-gray-600">({5})</span>

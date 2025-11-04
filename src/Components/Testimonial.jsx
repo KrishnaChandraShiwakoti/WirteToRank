@@ -20,7 +20,7 @@ const Testimonial = () => {
         See how business are dominating local search results with WritetoRank
       </p>
       <div className="lg:flex lg:gap-8 lg:flex-col">
-        <div className="flex gap-3 -ml-[385px] lg:-ml-[0px] lg:gap-10">
+        <div className="flex gap-8 -ml-[385px] lg:-ml-[200px] lg:gap-10">
           <ReviewCard />
           <ReviewCard />
           <ReviewCard />
