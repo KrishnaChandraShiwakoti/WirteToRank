@@ -30,7 +30,7 @@ const Progress = () => {
           <Button title={"Get Started Now"} />
         </div>
       </div>
-      <div className="relative lg:-top-50 mb-10">
+      <div className="relative lg:-top-20 lg:-left-9 xl:-top-50 mb-10">
         <img src={StepLine} alt="" className="hidden lg:block" />
         <div className="flex flex-col lg:flex-row gap-6">
           <div className="lg:w-3/12 relative lg:left-40 lg:-top-20 flex flex-col gap-3">
@@ -48,7 +48,7 @@ const Progress = () => {
               Our AI understands your niche and creates relevant content
             </p>
           </div>
-          <div className="md:w-3/12 relative lg:left-60 flex lg:-top-55 flex-col gap-3">
+          <div className="lg:w-3/12 relative lg:left-60 lg:-top-55 flex flex-col gap-3">
             <GraphNewUp
               size={50}
               weight="Outline"

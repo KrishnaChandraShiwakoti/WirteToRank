@@ -60,7 +60,7 @@ const Home = () => {
           </div>
         )}
       </div>
-      <div className=" mt-20 lg:mt-100"></div>
+      <div className="mt-20 xs:mt-20 xsm:mt-30 sm:mt-20 md:mt-28 lg:mt-40 xl:mt-80"></div>
       <ScrollLogo />
       <FeatureSection />
       <Progress />
@@ -73,12 +73,12 @@ const Home = () => {
         <img
           src={LocalSEO}
           alt=""
-          className="absolute lg:hidden block w-[] -z-1"
+          className="absolute md:hidden block w-[] -z-1"
         />
         <img
           src={image}
           alt=""
-          className="absolute hidden lg:block -z-1 h-[100%] w-[100%]"
+          className="absolute hidden md:block -z-1 h-[100%] w-[100%]"
         />
 
         <h1 className="lg:text-5xl text-2xl bg-gradient-to-r from-pink-500 via-amber-300 to-primary-600 bg-clip-text text-transparent font-bold">

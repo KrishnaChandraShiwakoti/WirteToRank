@@ -6,6 +6,8 @@
 @import "tailwindcss";
 
 @theme {
+  --breakpoint-xs: 370px;
+  --breakpoint-xsm: 390px;
   --font-dmSans: DMSana;
   --color-primary-50: #f1f0ff;
   --color-primary-100: #d2cfff;
