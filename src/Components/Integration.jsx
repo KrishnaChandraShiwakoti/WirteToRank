@@ -10,7 +10,7 @@ const Integration = () => {
         </p>
         <h1 className="text-2xl font-bold my-3">
           Seamless Software
-          <span className="bg-gradient-to-r from-primary-400 via-primary-700 to-primary-400 bg-clip-text text-transparent">
+          <span className="bg-[linear-gradient(90deg,#FF3BFF_0%,#ECBFBF_38.02%,#5C24FF_75.83%,#D94FD5_100%)] bg-clip-text text-transparent">
             {" "}
             Integrations
           </span>

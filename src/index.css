@@ -7,7 +7,7 @@
 
 @theme {
   --breakpoint-xs: 370px;
-  --breakpoint-xsm: 390px;
+  --breakpoint-xsm: 400px;
   --font-dmSans: DMSana;
   --color-primary-50: #f1f0ff;
   --color-primary-100: #d2cfff;
@@ -75,5 +75,5 @@ body {
   background: #f1f0ff;
 }
 html {
-  @apply font-dmSans;
+  font-family: "DM Sans", sans-serif;
 }

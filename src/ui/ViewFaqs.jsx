@@ -5,9 +5,9 @@ import { FaMinus } from "react-icons/fa";
 const ViewFaqs = ({ title, description }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="mx-2 px-2 py-3 rounded-xl w-12/12 bg-neutral-100 flex flex-col gap-3 text-xl">
+    <div className="mx-2 px-6 py-4 rounded-xl w-12/12 bg-neutral-50 flex flex-col gap-3 text-xl">
       <div className="flex justify-between items-center">
-        {title}{" "}
+        <p className="font-medium max-xsm:text-lg">{title} </p>
         <button
           onClick={() => setIsOpen(!isOpen)}
           className={`bg-gray-200 p-1 rounded-sm hover:cursor-pointer ${

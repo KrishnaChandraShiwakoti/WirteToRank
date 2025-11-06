@@ -8,12 +8,12 @@ const Progress = () => {
   return (
     <div className="w-8/12 mx-auto mt-10 lg:-mb-[300px]">
       <div className="lg:w-5/12 flex flex-col gap-4 mb-10">
-        <p className="bg-primary-500 bg-clip-text text-transparent uppercase">
+        <p className="bg-[#5D5FEF] font-semibold bg-clip-text text-transparent uppercase">
           Simple Process
         </p>
         <h1 className="text-3xl font-bold">
           Let's use{" "}
-          <span className="bg-gradient-to-r from-purple-600 to-primary-700 bg-clip-text text-transparent">
+          <span className="bg-[linear-gradient(90deg,#6E64FF_0%,#9E0FBE_100%)] bg-clip-text text-transparent">
             Writetorank{" "}
           </span>
           In{" "}
@@ -26,7 +26,7 @@ const Progress = () => {
           Get started in minutes with our streamlined workflow designed for
           maximum efficiency.
         </p>
-        <div className="">
+        <div className="hover:cursor-pointer z-10">
           <Button title={"Get Started Now"} />
         </div>
       </div>

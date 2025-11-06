@@ -1,6 +1,5 @@
 import HomeScreen from "../assets/svg/HomeScreen.svg";
 import Navbar from "../ui/Navbar";
-import Table from "../Components/Table";
 import ScrollLogo from "../Components/ScrollLogo";
 import FeatureSection from "../Components/FeatureSection";
 import Learn from "../ui/Learn";
@@ -13,7 +12,7 @@ import Button from "../ui/Buttons/Button";
 import LocalSEO from "../assets/svg/LocalSEO.svg";
 import image from "../assets/img/LocalSeo.png";
 import HeroSection from "../Components/HeroSection";
-import ErrorBoundary from "../Components/ErrorBoundary";
+import HeroImg from "../assets/img/HeroImg.png";
 import Walkthrough from "../Components/Walkthrough";
 import Form from "../Components/Form";
 import { useState, useEffect } from "react";
@@ -36,31 +35,45 @@ const Home = () => {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [showForm]);
-  return (
-    <div div className="relative">
-      <div className=" bg-neutral-900  h-full w-full lg:rounded-bl-[20rem] rounded-bl-[10rem] ">
-        <div
-          className="w-[100%] py-5 h-screen lg:rounded-bl-[20rem] rounded-bl-[10rem]"
-          style={{
-            background: `url(${HomeScreen})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-          }}>
-          <Navbar handleButtonClick={handleFormOverlay} />
-          <HeroSection handleFormOverlay={handleFormOverlay} />
-        </div>
 
-        {showForm && (
+  // listen to global "open-form" events dispatched by buttons without an explicit onClick
+  useEffect(() => {
+    const openHandler = () => setShowForm(true);
+    window.addEventListener("open-form", openHandler);
+    return () => window.removeEventListener("open-form", openHandler);
+  }, []);
+  return (
+    <>
+      <div className="relative">
+        <div className=" bg-neutral-900 h-svh w-full lg:rounded-bl-[20rem] rounded-bl-[10rem] ">
           <div
-            className="fixed inset-0  bg-opacity-50 z-50 flex items-start justify-center pt-5"
-            onClick={() => setShowForm(false)}>
-            <div onClick={(e) => e.stopPropagation()}>
-              <Form showForm={showForm} setShowForm={setShowForm} />
-            </div>
+            className="w-[100%] py-5 h-full lg:rounded-bl-[20rem] rounded-bl-[10rem]"
+            style={{
+              background: `url(${HomeScreen})`,
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+            }}>
+            <Navbar handleButtonClick={handleFormOverlay} />
+            <HeroSection handleFormOverlay={handleFormOverlay} />
           </div>
-        )}
+
+          {showForm && (
+            <div
+              className="fixed inset-0 lg:w-6/12 mx-auto z-50 flex items-start justify-center pt-5"
+              onClick={() => setShowForm(false)}>
+              <div className="w-11/12" onClick={(e) => e.stopPropagation()}>
+                <Form showForm={showForm} setShowForm={setShowForm} />
+              </div>
+            </div>
+          )}
+        </div>
+        <img
+          src={HeroImg}
+          alt="Hero Img"
+          className="relative xs:-top-45 xs:-mb-50 xsm:-top-70 xsm:-mb-70 w-11/12 h-[300px] md:h-full md:w-8/12 mx-auto mt-10
+        "
+        />
       </div>
-      <div className="mt-20 xs:mt-20 xsm:mt-30 sm:mt-20 md:mt-28 lg:mt-40 xl:mt-80"></div>
       <ScrollLogo />
       <FeatureSection />
       <Progress />
@@ -81,7 +94,7 @@ const Home = () => {
           className="absolute hidden md:block -z-1 h-[100%] w-[100%]"
         />
 
-        <h1 className="lg:text-5xl text-2xl bg-gradient-to-r from-pink-500 via-amber-300 to-primary-600 bg-clip-text text-transparent font-bold">
+        <h1 className="lg:text-5xl text-2xl bg-[linear-gradient(90deg,#FF3BFF_0%,#ECBFBF_38.02%,#5C24FF_75.83%,#D94FD5_100%)] bg-clip-text text-transparent font-bold">
           Ready to 10x Your Local SEO
         </h1>
         <p className="text-white text-xl mx-10 text-center lg:w-5/12">
@@ -93,28 +106,28 @@ const Home = () => {
           <div className="text-white flex flex-col gap-4">
             <p className="text-3xl">50,340+</p>
             <p>City Page Generated</p>
-            <p className="bg-primary-600 bg-clip-text text-transparent">
+            <p className="bg-[#FF4D6D] bg-clip-text text-transparent">
               +250% this month
             </p>
           </div>
           <div className="text-white flex flex-col gap-4">
             <p className="text-3xl">50,340+</p>
             <p>City Page Generated</p>
-            <p className="bg-primary-600 bg-clip-text text-transparent">
+            <p className="bg-[#FF4D6D] bg-clip-text text-transparent">
               +250% this month
             </p>
           </div>
           <div className="text-white flex flex-col gap-4">
             <p className="text-3xl">50,340+</p>
             <p>City Page Generated</p>
-            <p className="bg-primary-600 bg-clip-text text-transparent">
+            <p className="bg-[#FF4D6D] bg-clip-text text-transparent">
               +250% this month
             </p>
           </div>
           <div className="text-white flex flex-col gap-4">
             <p className="text-3xl">50,340+</p>
             <p>City Page Generated</p>
-            <p className="bg-primary-600 bg-clip-text text-transparent">
+            <p className="bg-[#FF4D6D] bg-clip-text text-transparent">
               +250% this month
             </p>
           </div>
@@ -122,7 +135,7 @@ const Home = () => {
         <Button title={"Get Started Now"} onClick={handleFormOverlay} />
       </div>
       <Footer />
-    </div>
+    </>
   );
 };
 

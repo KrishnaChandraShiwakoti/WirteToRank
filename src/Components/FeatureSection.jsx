@@ -28,7 +28,7 @@ const FeatureSection = () => {
           <div className="mt-3 mx-auto text-center w-10/12 lg:w-7/12 flex flex-col items-center justify-center">
             <h1 className="text-3xl font-semibold">
               Everything You Need to{" "}
-              <span className="bg-gradient-to-r from-pink-300 via-primary-400 to-pink-300 bg-clip-text text-transparent">
+              <span className="bg-[linear-gradient(90deg,#FF3BFF_0%,#ECBFBF_38.02%,#5C24FF_75.83%,#D94FD5_100%)] bg-clip-text text-transparent">
                 Dominate SEO
               </span>
             </h1>
@@ -49,19 +49,19 @@ const FeatureSection = () => {
                 unique, relevant content
               </p>
               <ul>
-                <li className="flex">
+                <li className="flex items-center">
                   <img src={customBullets} alt="" />
                   Generate Pages for 10,000+ locations
                 </li>
-                <li className="flex">
+                <li className="flex items-center">
                   <img src={customBullets} alt="" />
                   Service-specific content variations
                 </li>
-                <li className="flex">
+                <li className="flex items-center">
                   <img src={customBullets} alt="" />
                   Custom Keyword integration
                 </li>
-                <li className="flex">
+                <li className="flex items-center">
                   <img src={customBullets} alt="" />
                   Auto-optimized meta tags
                 </li>
@@ -78,19 +78,19 @@ const FeatureSection = () => {
                 KeyWords
               </p>
               <ul>
-                <li className="flex">
+                <li className="flex items-center">
                   <img src={customBullets} alt="" />
                   Competitor URL analysis
                 </li>
-                <li className="flex">
+                <li className="flex items-center">
                   <img src={customBullets} alt="" />
                   Content gap identification
                 </li>
-                <li className="flex">
+                <li className="flex items-center">
                   <img src={customBullets} alt="" />
                   Keyword extraction
                 </li>
-                <li className="flex">
+                <li className="flex items-center">
                   <img src={customBullets} alt="" />
                   Success pattern recognition
                 </li>
@@ -109,19 +109,19 @@ const FeatureSection = () => {
                 hierarchies.
               </p>
               <ul>
-                <li className="flex">
+                <li className="flex items-center">
                   <img src={customBullets} alt="" />
                   Smart URL clustering
                 </li>
-                <li className="flex">
+                <li className="flex items-center">
                   <img src={customBullets} alt="" />
                   Heist status tracking
                 </li>
-                <li className="flex">
+                <li className="flex items-center">
                   <img src={customBullets} alt="" />
                   Bulk operations support
                 </li>
-                <li className="flex">
+                <li className="flex items-center">
                   <img src={customBullets} alt="" />
                   Performance monitoring
                 </li>
@@ -137,19 +137,19 @@ const FeatureSection = () => {
                 site. One-click deployment with full SEO optimization.
               </p>
               <ul>
-                <li className="flex">
+                <li className="flex items-center">
                   <img src={customBullets} alt="" />
                   Direct WordPress API integration
                 </li>
-                <li className="flex">
+                <li className="flex items-center">
                   <img src={customBullets} alt="" />
                   Bulk page publishing
                 </li>
-                <li className="flex">
+                <li className="flex items-center">
                   <img src={customBullets} alt="" />
                   SEO plugin compatibility
                 </li>
-                <li className="flex">
+                <li className="flex items-center">
                   <img src={customBullets} alt="" />
                   Automatic sitemap updates
                 </li>

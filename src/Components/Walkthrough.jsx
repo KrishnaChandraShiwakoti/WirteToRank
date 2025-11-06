@@ -7,7 +7,7 @@ const Walkthrough = () => {
     <Element name="HowItWorks">
       <div className="w-10/12 mx-auto my-5 text-center h-max flex  flex-col items-center">
         <h1 className="text-2xl font-bold my-4">
-          <span className="bg-primary-600 bg-clip-text text-transparent">
+          <span className="bg-indigo-500 bg-clip-text text-transparent">
             Watch -
           </span>{" "}
           Complete Platform Walkthrough

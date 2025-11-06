@@ -16,7 +16,7 @@ const Learn = () => {
           <div className="w-auto flex justify-center items-center flex-col">
             <h1 className="text-center text-3xl font-bold  text-white">
               Understand Our{" "}
-              <span className="bg-gradient-to-r from-pink-300 via-primary-400 to-pink-300 bg-clip-text text-transparent">
+              <span className="bg-[linear-gradient(90deg,#FF3BFF_0%,#ECBFBF_38.02%,#5C24FF_75.83%,#D94FD5_100%)] bg-clip-text text-transparent">
                 Powerful Features
               </span>
             </h1>

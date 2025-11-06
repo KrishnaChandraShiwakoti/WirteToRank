@@ -15,7 +15,7 @@ const FeatureCard = ({ selected = 0 }) => {
         {selectedCard?.sections.map(({ heading, items }, idx) => {
           return (
             <div key={idx} className="min-w-[160px]">
-              <h1 className="bg-gradient-to-r from-pink-300 via-primary-400 to-pink-300 bg-clip-text text-transparent font-bold mb-3 text-lg">
+              <h1 className="bg-[linear-gradient(90deg,#6E64FF_0%,#9E0FBE_100%)] bg-clip-text text-transparent font-bold mb-3 text-lg">
                 {heading}
               </h1>
               <ul className={`list-disc flex flex-col gap-2 pl-5`}>

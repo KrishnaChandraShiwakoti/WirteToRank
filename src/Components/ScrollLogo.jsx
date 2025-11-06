@@ -8,11 +8,11 @@ const ScrollLogo = () => {
     <div className=" relative w-full flex justify-center items-center my-10 flex-col overflow-hidden">
       <h1 className="text-2xl mb-5 text-center">
         Over{" "}
-        <span className="bg-primary-600 bg-clip-text text-transparent">
+        <span className="bg-primary-500 bg-clip-text text-transparent">
           200+ software
         </span>{" "}
         business growing with{" "}
-        <span className="bg-primary-600 bg-clip-text text-transparent">
+        <span className="bg-primary-500 bg-clip-text text-transparent">
           Write to rank
         </span>
       </h1>
