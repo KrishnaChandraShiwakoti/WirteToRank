@@ -1,6 +1,7 @@
 import PrimaryHeader from "../ui/PrimaryHeader";
 import HeroButton from "../ui/Buttons/HeroButton";
 import star from "../assets/svg/star.svg";
+import HeroImg from "../assets/img/HeroImg.png";
 
 const HeroSection = ({ handleFormOverlay }) => {
   return (
@@ -9,7 +10,7 @@ const HeroSection = ({ handleFormOverlay }) => {
         <img src={star} className="h-5 w-5" />
         <p className=" text-xl font-medium">AI-Powered SEO Revolution</p>
       </div>
-      <div className="text-4xl font-semibold mt-8 md:mt-0 w-8/12 flex flex-col xsm:gap-5 md:inline-block md:w-6/12 md:text-5xl">
+      <div className="text-4xl font-semibold mt-8 md:mt-0 w-8/12 flex flex-col xs:gap-5 md:inline-block md:w-6/12 md:text-5xl">
         <PrimaryHeader title={"Transform"} />
         Your Business{" "}
         <p>
@@ -27,6 +28,12 @@ const HeroSection = ({ handleFormOverlay }) => {
       </p>
       <div>
         <HeroButton title={"Try SEO Heist"} onclick={handleFormOverlay} />
+        <img
+          src={HeroImg}
+          alt="Hero Img"
+          className="relative xsm:top-20 w-11/12 h-[300px] md:h-full md:w-8/12 mx-auto mt-10
+        "
+        />
       </div>
     </div>
   );

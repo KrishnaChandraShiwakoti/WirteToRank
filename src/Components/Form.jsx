@@ -67,7 +67,7 @@ const Form = ({ showForm, setShowForm }) => {
         <InputField
           label={"Phone Number"}
           type={"tel"}
-          placeholder={"+41 1734567324"}
+          placeholder={"+61 485906541"}
         />
         <InputField
           label={"Business Name"}

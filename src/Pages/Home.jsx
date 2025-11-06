@@ -12,7 +12,6 @@ import Button from "../ui/Buttons/Button";
 import LocalSEO from "../assets/svg/LocalSEO.svg";
 import image from "../assets/img/LocalSeo.png";
 import HeroSection from "../Components/HeroSection";
-import HeroImg from "../assets/img/HeroImg.png";
 import Walkthrough from "../Components/Walkthrough";
 import Form from "../Components/Form";
 import { useState, useEffect } from "react";
@@ -44,36 +43,29 @@ const Home = () => {
   }, []);
   return (
     <>
-      <div className="relative">
-        <div className=" bg-neutral-900 h-svh w-full lg:rounded-bl-[20rem] rounded-bl-[10rem] ">
-          <div
-            className="w-[100%] py-5 h-full lg:rounded-bl-[20rem] rounded-bl-[10rem]"
-            style={{
-              background: `url(${HomeScreen})`,
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-            }}>
-            <Navbar handleButtonClick={handleFormOverlay} />
-            <HeroSection handleFormOverlay={handleFormOverlay} />
-          </div>
-
-          {showForm && (
-            <div
-              className="fixed inset-0 lg:w-6/12 mx-auto z-50 flex items-start justify-center pt-5"
-              onClick={() => setShowForm(false)}>
-              <div className="w-11/12" onClick={(e) => e.stopPropagation()}>
-                <Form showForm={showForm} setShowForm={setShowForm} />
-              </div>
-            </div>
-          )}
+      <div className=" bg-neutral-900 h-svh w-full lg:rounded-bl-[20rem] rounded-bl-[10rem] ">
+        <div
+          className="w-[100%] py-5 h-full lg:rounded-bl-[20rem] rounded-bl-[10rem]"
+          style={{
+            background: `url(${HomeScreen})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}>
+          <Navbar handleButtonClick={handleFormOverlay} />
+          <HeroSection handleFormOverlay={handleFormOverlay} />
         </div>
-        <img
-          src={HeroImg}
-          alt="Hero Img"
-          className="relative xs:-top-45 xs:-mb-50 xsm:-top-70 xsm:-mb-70 w-11/12 h-[300px] md:h-full md:w-8/12 mx-auto mt-10
-        "
-        />
+
+        {showForm && (
+          <div
+            className="fixed inset-0 lg:w-6/12 mx-auto z-50 flex items-start justify-center pt-5"
+            onClick={() => setShowForm(false)}>
+            <div className="w-11/12" onClick={(e) => e.stopPropagation()}>
+              <Form showForm={showForm} setShowForm={setShowForm} />
+            </div>
+          </div>
+        )}
       </div>
+      <div className="xs:h-2/12 xsm:h-1/15 lg:h-3/12 xl:h-6/13 w-11/12  md:w-8/12 "></div>
       <ScrollLogo />
       <FeatureSection />
       <Progress />
