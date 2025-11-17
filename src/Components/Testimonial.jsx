@@ -1,6 +1,7 @@
 import React from "react";
 import ReviewCard from "../ui/ReviewCard";
 import Bg from "../assets/img/testimonialBg.jpg";
+import testimonials from "../Utlis/Data/Testimonials";
 const Testimonial = () => {
   return (
     <div
@@ -21,17 +22,30 @@ const Testimonial = () => {
       </p>
       <div className="lg:flex lg:gap-8 lg:flex-col">
         <div className="flex gap-8 -ml-[385px] lg:-ml-[200px] lg:gap-10">
-          <ReviewCard />
-          <ReviewCard />
-          <ReviewCard />
-          <ReviewCard />
+          {testimonials.slice(0, 4).map((t) => (
+            <ReviewCard
+              key={t.id}
+              profile={t.profile}
+              name={t.name}
+              role={t.role}
+              company={t.company}
+              rating={t.rating}
+              review={t.review}
+            />
+          ))}
         </div>
         <div className="gap-8 hidden lg:flex">
-          <ReviewCard />
-          <ReviewCard />
-          <ReviewCard />
-          <ReviewCard />
-          {/* <ReviewCard /> */}
+          {testimonials.slice(4, 9).map((t) => (
+            <ReviewCard
+              key={t.id}
+              profile={t.profile}
+              name={t.name}
+              role={t.role}
+              company={t.company}
+              rating={t.rating}
+              review={t.review}
+            />
+          ))}
         </div>
       </div>
     </div>

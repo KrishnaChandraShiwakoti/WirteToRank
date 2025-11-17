@@ -5,7 +5,7 @@ import SoftwareLogo from "../ui/SoftwareLogo";
 
 const ScrollLogo = () => {
   return (
-    <div className="w-full m-5 flex justify-center items-center flex-col overflow-hidden">
+    <div className="max-w-full m-5 flex justify-center items-center flex-col overflow-hidden">
       <h1 className="text-2xl mb-5 text-center">
         Over
         <span className="bg-primary-500 bg-clip-text text-transparent">

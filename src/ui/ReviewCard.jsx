@@ -33,7 +33,7 @@ const StarRating = ({ rating, maxStars = 5 }) => {
   return <div className="flex items-center gap-1">{stars}</div>;
 };
 
-const ReviewCard = ({ profile }) => {
+const ReviewCard = ({ profile, name, role, company, rating = 5, review }) => {
   return (
     <div className="w-sm lg:w-lg bg-white shadow-xl rounded-xl px-4 py-6 text-black">
       <div className="flex p-2 justify-between items-center mx-5">
@@ -48,31 +48,27 @@ const ReviewCard = ({ profile }) => {
           </div>
           {/* Info */}
           <div>
-            <h1 className="font-bold text-lg">Crystal Maiden</h1>
+            <h1 className="font-bold text-lg">{name || "Customer"}</h1>
             <div className="flex gap-1 items-center">
-              <p className="text-neutral-500">Growth Manager</p>
+              <p className="text-neutral-500">{role || "Role"}</p>
               <span className="border-l-2 border-neutral-500 h-3"></span>
-              <p className="text-primary-500">HomeServe Pro</p>
+              <p className="text-primary-500">{company || "Company"}</p>
             </div>
           </div>
         </div>
         {/* Ratings */}
         <div className="lg:flex hidden items-center gap-2">
-          <StarRating rating={5} />
-          <span className="text-sm text-gray-600">({5})</span>
+          <StarRating rating={rating} />
+          <span className="text-sm text-gray-600">({rating})</span>
         </div>
       </div>
       <hr className="w-8/12 ml-5" />
       <span className="border-b-2 border-neutral-500 h-3 w-11/12"></span>
       {/* Review */}
-      <h2 className="mt-5">
-        "Moving from Ireland to Australia seemed daunting, but Talent Way guided
-        me through every step. I landed my dream job with visa sponsorship
-        within 6 weeks."
-      </h2>
+      <h2 className="mt-5">{review || "No review provided."}</h2>
       <div className="flex lg:hidden items-center gap-2">
-        <StarRating rating={5} />
-        <span className="text-sm text-gray-600">({5})</span>
+        <StarRating rating={rating} />
+        <span className="text-sm text-gray-600">({rating})</span>
       </div>
     </div>
   );
