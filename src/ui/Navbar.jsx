@@ -60,9 +60,6 @@ const Navbar = ({ handleButtonClick }) => {
           </button>
 
           <div className="mr-5 hidden lg:flex gap-4 items-center">
-            <button className="text-primary-500 hover:cursor-pointer hidden lg:block">
-              Login
-            </button>
             <CTA title={"Get Started Now"} onClick={handleButtonClick} />
           </div>
         </div>
@@ -108,9 +105,9 @@ const Navbar = ({ handleButtonClick }) => {
               <button className="text-primary-500 text-left">Login</button>
               <CTA
                 title={"Get Started Now"}
-                onClick={() => {
+                onClick={(e) => {
                   closeMenu();
-                  handleButtonClick && handleButtonClick();
+                  handleButtonClick(e);
                 }}
               />
             </div>
