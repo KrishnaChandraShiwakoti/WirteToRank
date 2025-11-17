@@ -35,7 +35,7 @@ const StarRating = ({ rating, maxStars = 5 }) => {
 
 const ReviewCard = ({ profile, name, role, company, rating = 5, review }) => {
   return (
-    <div className="w-sm lg:w-lg bg-white shadow-xl rounded-xl px-4 py-6 text-black">
+    <div className="w-sm lg:w-lg bg-white shadow-xl rounded-xl px-2 py-6 text-black">
       <div className="flex p-2 justify-between items-center mx-5">
         <div className="flex items-center lg:gap-4">
           {/* Profile pic */}
