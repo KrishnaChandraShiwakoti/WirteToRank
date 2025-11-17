@@ -1,17 +1,17 @@
 import React from "react";
-import SoftwareLogo from "../ui/SoftwareLogo";
-import freedly from "../assets/freedly.png";
 import drafitbit from "../assets/draftbit.png";
+import freedly from "../assets/freedly.png";
+import SoftwareLogo from "../ui/SoftwareLogo";
 
 const ScrollLogo = () => {
   return (
-    <div className=" relative w-full flex justify-center items-center my-20 flex-col overflow-hidden">
+    <div className="w-full m-5 flex justify-center items-center flex-col overflow-hidden">
       <h1 className="text-2xl mb-5 text-center">
-        Over{" "}
+        Over
         <span className="bg-primary-500 bg-clip-text text-transparent">
           200+ software
-        </span>{" "}
-        business growing with{" "}
+        </span>
+        business growing with
         <span className="bg-primary-500 bg-clip-text text-transparent">
           Write to rank
         </span>

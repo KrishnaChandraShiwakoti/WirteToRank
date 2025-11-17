@@ -1,20 +1,20 @@
-import HomeScreen from "../assets/svg/HomeScreen.svg";
-import Navbar from "../ui/Navbar";
-import ScrollLogo from "../Components/ScrollLogo";
-import FeatureSection from "../Components/FeatureSection";
-import Learn from "../ui/Learn";
-import Footer from "../Components/Footer";
-import FrequentlyQuestions from "../Components/FrequentlyQuestions";
-import Progress from "../Components/Progress";
-import Integration from "../Components/Integration";
-import Testimonial from "../Components/Testimonial";
-import Button from "../ui/Buttons/Button";
-import LocalSEO from "../assets/svg/LocalSEO.svg";
+import { useEffect, useState } from "react";
 import image from "../assets/img/LocalSeo.png";
-import HeroSection from "../Components/HeroSection";
-import Walkthrough from "../Components/Walkthrough";
+import HomeScreen from "../assets/svg/HomeScreen.svg";
+import LocalSEO from "../assets/svg/LocalSEO.svg";
+import FeatureSection from "../Components/FeatureSection";
+import Footer from "../Components/Footer";
 import Form from "../Components/Form";
-import { useState, useEffect } from "react";
+import FrequentlyQuestions from "../Components/FrequentlyQuestions";
+import HeroSection from "../Components/HeroSection";
+import Integration from "../Components/Integration";
+import Progress from "../Components/Progress";
+import ScrollLogo from "../Components/ScrollLogo";
+import Testimonial from "../Components/Testimonial";
+import Walkthrough from "../Components/Walkthrough";
+import Button from "../ui/Buttons/Button";
+import Learn from "../ui/Learn";
+import Navbar from "../ui/Navbar";
 
 const Home = () => {
   const [showForm, setShowForm] = useState(false);
@@ -43,7 +43,7 @@ const Home = () => {
   }, []);
   return (
     <>
-      <div className=" bg-neutral-900 h-svh w-full lg:rounded-bl-[20rem] rounded-bl-[10rem] ">
+      <div className=" bg-neutral-900 w-full lg:rounded-bl-[20rem] rounded-bl-[10rem] ">
         <div
           className="w-[100%] py-5 h-full lg:rounded-bl-[20rem] rounded-bl-[10rem]"
           style={{
@@ -65,7 +65,8 @@ const Home = () => {
           </div>
         )}
       </div>
-      <div className="xs:h-2/12 xsm:h-1/15 lg:h-3/12 xl:h-6/13 w-11/12  md:w-8/12 "></div>
+      {/* <div className="block overflow-hidden xs:h-2/12 xsm:h-1/15 lg:h-3/12 xl:h-6/13 w-11/12  md:w-8/12 "></div> */}
+      
       <ScrollLogo />
       <FeatureSection />
       <Progress />

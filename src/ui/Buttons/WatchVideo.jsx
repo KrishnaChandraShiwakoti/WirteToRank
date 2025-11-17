@@ -1,6 +1,5 @@
 import React from "react";
 import PlayButton from "../../assets/svg/PlayButton.svg";
-import { LuPlay } from "react-icons/lu";
 
 const WatchVideo = ({ title }) => {
   return (

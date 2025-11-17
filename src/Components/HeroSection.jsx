@@ -1,7 +1,7 @@
-import PrimaryHeader from "../ui/PrimaryHeader";
-import HeroButton from "../ui/Buttons/HeroButton";
-import star from "../assets/svg/star.svg";
 import HeroImg from "../assets/img/HeroImg.png";
+import star from "../assets/svg/star.svg";
+import HeroButton from "../ui/Buttons/HeroButton";
+import PrimaryHeader from "../ui/PrimaryHeader";
 
 const HeroSection = ({ handleFormOverlay }) => {
   return (
@@ -31,8 +31,7 @@ const HeroSection = ({ handleFormOverlay }) => {
         <img
           src={HeroImg}
           alt="Hero Img"
-          className="relative xsm:top-20 w-11/12 h-[300px] md:h-full md:w-8/12 mx-auto mt-10
-        "
+          className="xsm:top-20 w-11/12 h-[300px] md:h-full md:w-8/12 mx-auto mt-10 "
         />
       </div>
     </div>
