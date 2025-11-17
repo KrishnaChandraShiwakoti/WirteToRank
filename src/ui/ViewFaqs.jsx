@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import { FaPlus } from "react-icons/fa6";
-import { FaMinus } from "react-icons/fa";
+import { useState } from "react";
 
 const ViewFaqs = ({ title, description }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,12 +8,12 @@ const ViewFaqs = ({ title, description }) => {
         <p className="font-medium max-xsm:text-lg">{title} </p>
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className={`bg-gray-200 p-1 rounded-sm hover:cursor-pointer ${
+          className={`bg-gray-200 py-1 px-3 rounded-sm hover:cursor-pointer ${
             isOpen
               ? "bg-gradient-to-r from-primary-400 via-primary-600 to-primary-400"
               : ""
           }`}>
-          {!isOpen ? <FaPlus /> : <FaMinus />}
+          {!isOpen ? "+" : "-"}
         </button>
       </div>
       {isOpen && (

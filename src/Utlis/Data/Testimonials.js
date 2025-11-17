@@ -14,7 +14,7 @@ const testimonials = [
     name: "Ravi Patel",
     role: "Owner",
     company: "Ravi's Plumbing",
-    rating: 4.5,
+    rating: 3.2,
     review:
       "WriteToRank helped our local listings surge to page one. We saw a 60% increase in calls within two months.",
     profile: null,

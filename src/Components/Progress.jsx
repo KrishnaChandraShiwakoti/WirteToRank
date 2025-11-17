@@ -1,8 +1,8 @@
 import Button from "../ui/Buttons/Button";
 import StepLine from "../assets/svg/StepLine.svg";
-import { MdNoteAdd } from "react-icons/md";
-import { GraphNewUp } from "@solar-icons/react";
-import { Rocket } from "@solar-icons/react";
+import { MdNoteAdd } from "../ui/Icons/MdNoteAdd";
+import { GraphUp } from "../ui/Icons/GraphUp";
+import { SolarRocket } from "../ui/Icons/SolarRocket";
 
 const Progress = () => {
   return (
@@ -33,12 +33,8 @@ const Progress = () => {
       <div className="relative lg:-top-20 lg:-left-9 xl:-top-50 mb-10">
         <img src={StepLine} alt="" className="hidden lg:block" />
         <div className="flex flex-col lg:flex-row gap-6">
-          <div className="lg:w-3/12 relative lg:left-40 lg:-top-20 flex flex-col gap-3">
-            <MdNoteAdd
-              size={50}
-              color="#645be8"
-              className="p-2 bg-white rounded-xl"
-            />
+          <div className="lg:w-3/12 relative lg:left-40 lg:-top-20 flex flex-col gap-3 items-start">
+            <MdNoteAdd />
             <h1 className="absolute -z-1 left-55 text-9xl font-extrabold text-neutral-200 -top-10">
               1
             </h1>
@@ -49,12 +45,7 @@ const Progress = () => {
             </p>
           </div>
           <div className="lg:w-3/12 relative lg:left-60 lg:-top-55 flex flex-col gap-3">
-            <GraphNewUp
-              size={50}
-              weight="Outline"
-              color="#645be8"
-              className="p-2 bg-white rounded-xl"
-            />
+            <GraphUp />
             <h1 className="absolute -z-1 left-50 text-9xl font-extrabold text-neutral-200 -top-12">
               2
             </h1>
@@ -68,13 +59,8 @@ const Progress = () => {
               SEO-optimized pages in minutes.
             </p>
           </div>
-          <div className="lg:w-3/12 relative lg:left-85 flex lg:-top-117 flex-col gap-3">
-            <Rocket
-              size={50}
-              weight="Outline"
-              color="#645be8"
-              className="p-2 bg-white rounded-xl"
-            />
+          <div className="lg:w-3/12 relative lg:left-85 flex lg:-top-117 flex-col gap-3 items-start">
+            <SolarRocket />
             <h1 className="absolute -z-1 left-50 lg:left-20 text-9xl font-extrabold text-neutral-200 -top-8">
               3
             </h1>

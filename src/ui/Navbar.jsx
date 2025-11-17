@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Logo from "../assets/svg/Logo.svg";
 import CTA from "./Buttons/CTA";
 import { Link } from "react-scroll";
-import { IoMenu, IoClose } from "react-icons/io5";
+import { IoMenu } from "./Icons/IoMenu";
+import { IoClose } from "./Icons/IoClose";
 
 const Navbar = ({ handleButtonClick }) => {
   const [open, setOpen] = useState(false);

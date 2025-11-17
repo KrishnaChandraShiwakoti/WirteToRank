@@ -1,7 +1,8 @@
 import React from "react";
-import { IoPerson } from "react-icons/io5";
 import avatar from "../assets/img/avatar.png";
-import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
+import { FaStar } from "./Icons/FaStar";
+import { FaRegStar } from "./Icons/FaRegStar";
+import { FaStarHalfAlt } from "./Icons/FaStarHalfAlt";
 
 const StarRating = ({ rating, maxStars = 5 }) => {
   const stars = [];
@@ -11,9 +12,7 @@ const StarRating = ({ rating, maxStars = 5 }) => {
 
   // Add full stars
   for (let i = 0; i < fullStars; i++) {
-    stars.push(
-      <FaStar key={`full-${i}`} className="text-yellow-400 text-sm" />
-    );
+    stars.push(<FaStar key={`full-${i}`} />);
   }
 
   // Add half star if needed
@@ -36,7 +35,7 @@ const StarRating = ({ rating, maxStars = 5 }) => {
 const ReviewCard = ({ profile, name, role, company, rating = 5, review }) => {
   return (
     <div className="w-sm lg:w-lg bg-white shadow-xl rounded-xl px-2 py-6 text-black">
-      <div className="flex p-2 justify-between items-center mx-5">
+      <div className="flex p-1 justify-between items-center mx-5">
         <div className="flex items-center lg:gap-4">
           {/* Profile pic */}
           <div className="bg-neutral-500 rounded-3xl h-10 w-10 flex items-center justify-center">
@@ -65,7 +64,7 @@ const ReviewCard = ({ profile, name, role, company, rating = 5, review }) => {
       <hr className="w-8/12 ml-5" />
       <span className="border-b-2 border-neutral-500 h-3 w-11/12"></span>
       {/* Review */}
-      <h2 className="mt-5">{review || "No review provided."}</h2>
+      <h2 className="mt-5 p-1 ml-5">{review || "No review provided."}</h2>
       <div className="flex lg:hidden items-center gap-2">
         <StarRating rating={rating} />
         <span className="text-sm text-gray-600">({rating})</span>
